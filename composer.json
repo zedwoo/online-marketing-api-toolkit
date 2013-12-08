@@ -2,7 +2,7 @@
     "name": "zedwoo/online-marketing-api-toolkit",
     "homepage": "https://github.com/zedwoo/online-marketing-api-toolkit",
     "description": "Toolkit for requesting online marketing apis",
-    "version": "v0.1.0",
+    "version": "v1.0.0",
     "type": "library",
     "license": "MIT",
     "authors": [
