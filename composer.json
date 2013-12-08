@@ -10,6 +10,11 @@
             "email": "m.janssen@zedwoo.de"
         }
     ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
     "support": {
         "issues": "https://github.com/zedwoo/online-marketing-api-toolkit/issues"
     },
