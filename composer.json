@@ -1,0 +1,24 @@
+{
+    "name": "zedwoo/online-marketing-api-toolkit",
+    "homepage": "todo",
+    "description": "Toolkit for requesting online marketing apis",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "michael janssen",
+            "email": "m.janssen@zedwoo.de"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/zedwoo/online-marketing-api-toolkit/issues"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "guzzle/guzzle": "~3.7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+}

@@ -1,0 +1,2 @@
+<?php
+define('ZEDWOO_API_KEY','YOUR APICODE HERE');
