@@ -1,0 +1,471 @@
+{"baseUrl": "http:\/\/api.sistrix.net",
+	"description": "SistrixApi",
+	"operations": {
+		"credits": {
+			"httpMethod": "GET",
+			"uri": "credits"
+		},
+		"domain": {
+			"httpMethod": "GET",
+			"uri": "domain",
+			"summary": "Domain Methods",
+			"parameters": {
+				"domain": {
+					"location": "query",
+					"required": true
+				},
+				"country": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.overview": {
+			"httpMethod": "GET",
+			"uri": "domain.overview",
+			"summary": "Domain Overview",
+			"extends": "domain"
+
+		},
+		"domain.sichtbarkeitsindex": {
+			"httpMethod": "GET",
+			"uri": "domain.sichtbarkeitsindex",
+			"extends": "domain",
+			"parameters": {
+				"date": {
+					"location": "query",
+					"required": false
+				},
+				"history": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.pages": {
+			"httpMethod": "GET",
+			"uri": "domain.pages",
+			"extends": "domain",
+			"parameters": {
+				"history": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.pagerank": {
+			"httpMethod": "GET",
+			"uri": "domain.pagerank",
+			"extends": "domain",
+			"parameters": {
+				"history": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.age": {
+			"httpMethod": "GET",
+			"uri": "domain.age",
+			"extends": "domain"
+		},
+		"domain.competitors.seo": {
+			"httpMethod": "GET",
+			"uri": "domain.competitors.seo",
+			"extends": "domain",
+			"parameters": {
+				"num": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.competitors.sem": {
+			"httpMethod": "GET",
+			"uri": "domain.competitors.sem",
+			"extends": "domain",
+			"parameters": {
+				"num": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.competitors.us": {
+			"httpMethod": "GET",
+			"uri": "domain.competitors.us",
+			"extends": "domain",
+			"parameters": {
+				"num": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.kwcount.seo": {
+			"httpMethod": "GET",
+			"uri": "domain.kwcount.seo",
+			"extends": "domain",
+			"parameters": {
+				"history": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.kwcount.seo.top10": {
+			"httpMethod": "GET",
+			"uri": "domain.kwcount.seo.top10",
+			"extends": "domain",
+			"parameters": {
+				"history": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.kwcount.sem": {
+			"httpMethod": "GET",
+			"uri": "domain.kwcount.sem",
+			"extends": "domain",
+			"parameters": {
+				"history": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.kwcount.us": {
+			"httpMethod": "GET",
+			"uri": "domain.kwcount.us",
+			"extends": "domain",
+			"parameters": {
+				"history": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.social.overview": {
+			"httpMethod": "GET",
+			"uri": "domain.social.overview",
+			"extends": "domain"
+		},
+		"domain.social.top": {
+			"httpMethod": "GET",
+			"uri": "domain.social.top",
+			"extends": "domain",
+			"parameters": {
+				"num": {
+					"location": "query",
+					"required": false
+				},
+				"network": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.social.latest": {
+			"httpMethod": "GET",
+			"uri": "domain.social.latest",
+			"extends": "domain",
+			"parameters": {
+				"num": {
+					"location": "query",
+					"required": false
+				},
+				"network": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"domain.social.url": {
+			"httpMethod": "GET",
+			"uri": "domain.social.url",
+			"extends": "domain",
+			"parameters": {
+				"url": {
+					"location": "query",
+					"required": false
+				},
+				"history": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"keyword": {
+			"httpMethod": "GET",
+			"uri": "keyword",
+			"parameters": {
+				"kw": {
+					"location": "query",
+					"required": true
+				},
+				"country": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"keyword.seo": {
+			"httpMethod": "GET",
+			"uri": "keyword.seo",
+			"extends": "keyword",
+			"parameters": {
+				"date": {
+					"location": "query",
+					"required": false
+				},
+				"num": {
+					"location": "query",
+					"required": false
+				},
+				"domain": {
+					"location": "query",
+					"required": false
+				},
+				"url": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"keyword.sem": {
+			"httpMethod": "GET",
+			"uri": "keyword.sem",
+			"extends": "keyword",
+			"parameters": {
+				"date": {
+					"location": "query",
+					"required": false
+				},
+				"num": {
+					"location": "query",
+					"required": false
+				},
+				"domain": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"keyword.us": {
+			"httpMethod": "GET",
+			"uri": "keyword.us",
+			"extends": "keyword",
+			"parameters": {
+				"date": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"keyword.domain.seo": {
+			"httpMethod": "GET",
+			"uri": "keyword.domain.seo",
+			"parameters": {
+				"domain": {
+					"location": "query",
+					"required": true
+				},
+				"date": {
+					"location": "query",
+					"required": false
+				},
+				"num": {
+					"location": "query",
+					"required": false
+				},
+				"search": {
+					"location": "query",
+					"required": false
+				},
+				"host": {
+					"location": "query",
+					"required": false
+				},
+				"url": {
+					"location": "query",
+					"required": false
+				},
+				"path": {
+					"location": "query",
+					"required": false
+				},
+				"from_pos": {
+					"location": "query",
+					"required": false
+				},
+				"to_pos": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"keyword.domain.sem": {
+			"httpMethod": "GET",
+			"uri": "keyword.domain.sem",
+			"parameters": {
+				"domain": {
+					"location": "query",
+					"required": true
+				},
+				"date": {
+					"location": "query",
+					"required": false
+				},
+				"num": {
+					"location": "query",
+					"required": false
+				},
+				"search": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"keyword.domain.us": {
+			"httpMethod": "GET",
+			"uri": "keyword.domain.us",
+			"parameters": {
+				"domain": {
+					"location": "query",
+					"required": true
+				},
+				"date": {
+					"location": "query",
+					"required": false
+				},
+				"num": {
+					"location": "query",
+					"required": false
+				},
+				"search": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"links.overview": {
+			"httpMethod": "GET",
+			"uri": "links.overview",
+			"parameters": {
+				"domain": {
+					"location": "query",
+					"required": true
+				},
+				"country": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"links.list": {
+			"httpMethod": "GET",
+			"uri": "links.list",
+			"extends": "links.overview",
+			"parameters": {
+				"offset": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"links.linktargets": {
+			"httpMethod": "GET",
+			"uri": "links.linktargets",
+			"extends": "links.overview",
+			"parameters": {
+				"num": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"links.linktexts": {
+			"httpMethod": "GET",
+			"uri": "links.linktexts",
+			"extends": "links.overview",
+			"parameters": {
+				"num": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"monitoring.projects": {
+			"httpMethod": "GET",
+			"uri": "monitoring.projects"
+		},
+		"monitoring.folders": {
+			"httpMethod": "GET",
+			"uri": "monitoring.folders",
+			"parameters": {
+				"project": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"monitoring.folder": {
+			"httpMethod": "GET",
+			"uri": "monitoring.folder",
+			"extends": "monitoring.folders",
+			"parameters": {
+				"folder": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"monitoring.check": {
+			"httpMethod": "GET",
+			"uri": "monitoring.check",
+			"extends": "monitoring.folder",
+			"parameters": {
+				"check": {
+					"location": "query",
+					"required": false
+				},
+				"history": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"monitoring.reports": {
+			"httpMethod": "GET",
+			"uri": "monitoring.reports",
+			"parameters": {
+				"project": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"monitoring.report": {
+			"httpMethod": "GET",
+			"uri": "monitoring.report",
+			"extends": "monitoring.reports",
+			"parameters": {
+				"report": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"monitoring.report.download": {
+			"httpMethod": "GET",
+			"uri": "monitoring.report.download",
+			"extends": "monitoring.report",
+			"parameters": {
+				"date": {
+					"location": "query",
+					"required": false
+				}
+			}
+		}
+	}}

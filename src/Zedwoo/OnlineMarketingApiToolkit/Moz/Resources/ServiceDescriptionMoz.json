@@ -1,0 +1,138 @@
+{"baseUrl": "http:\/\/lsapi.seomoz.com",
+	"description": "Moz Api",
+	"operations": {
+		"url-metrics": {
+			"httpMethod": "GET",
+			"uri": "/linkscape/url-metrics/{url}",
+		"parameters": {
+			"url": {
+				"location": "uri",
+				"required": true
+			},
+			"Cols": {
+				"location": "query",
+				"required": true
+			}
+		}
+		},
+		"link-metrics": {
+			"httpMethod": "GET",
+			"uri": "/linkscape/links/{url}",
+			"parameters": {
+				"url": {
+					"location": "uri",
+					"required": true
+				},
+				"Scope": {
+					"location": "query",
+					"required": false
+				},
+				"Sort": {
+					"location": "query",
+					"required": false
+				},
+				"Filter": {
+					"location": "query",
+					"required": false
+				},
+				"Limit": {
+					"location": "query",
+					"required": false
+				},
+				"SourceDomain": {
+					"location": "query",
+					"required": false
+				},
+				"TargetCols": {
+					"location": "query",
+					"required": false
+				},
+				"SourceCols": {
+					"location": "query",
+					"required": false
+				},
+				"LinkCols": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"anchor-text": {
+			"httpMethod": "GET",
+			"uri": "/linkscape/anchor-text/{url}",
+			"parameters": {
+				"url": {
+					"location": "uri",
+					"required": true
+				},
+				"Scope": {
+					"location": "query",
+					"required": false
+				},
+				"Filter": {
+					"location": "query",
+					"required": false
+				},
+				"Limit": {
+					"location": "query",
+					"required": false
+				},
+				"Offset": {
+					"location": "query",
+					"required": false
+				},
+				"Cols": {
+					"location": "query",
+					"required": false
+				},
+				"SourceCols": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"top-pages": {
+			"httpMethod": "GET",
+			"uri": "/linkscape/top-pages/{domain}",
+			"parameters": {
+				"domain": {
+					"location": "domain",
+					"required": true
+				},
+				"Filter": {
+					"location": "query",
+					"required": false
+				},
+				"Sort": {
+					"location": "query",
+					"required": false
+				},
+				"Limit": {
+					"location": "query",
+					"required": false
+				},
+				"Offset": {
+					"location": "query",
+					"required": false
+				},
+				"Cols": {
+					"location": "query",
+					"required": false
+				}
+			}
+		},
+		"metadata/last_update": {
+			"httpMethod": "GET",
+			"uri": "/linkscape/metadata/last_update.json"
+		},
+		"metadata/next_update": {
+			"httpMethod": "GET",
+			"uri": "/linkscape/metadata/next_update.json"
+		},
+		"metadata/index_stats": {
+			"httpMethod": "GET",
+			"uri": "/linkscape/metadata/index_stats"
+		}
+	}
+
+}

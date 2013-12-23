@@ -1,1 +1,266 @@
-{"baseUrl":"http:\/\/api.zedwoo-data.de","operations":{"account\/status":{"httpMethod":"GET","uri":"\/account\/status.json","summary":"Account API"},"serps_weekly\/add_keyword":{"httpMethod":"GET","uri":"\/serps_weekly\/add_keyword.json\/{keyword}","summary":"SerpsWeekly API","parameters":{"keyword":{"location":"uri","required":true},"country":{"location":"query","required":false}}},"serps_weekly\/delete_keyword":{"httpMethod":"DELETE","uri":"\/serps_weekly\/delete_keyword.json\/{keyword}","summary":"SerpsWeekly API","parameters":{"keyword":{"location":"uri","required":true}}},"serps_weekly\/get_keywords":{"httpMethod":"GET","uri":"\/serps_weekly\/get_keywords.json","summary":"SerpsWeekly API","parameters":{"limit":{"location":"query","required":false},"offset":{"location":"query","required":false}}},"serps_weekly\/get_rankings":{"httpMethod":"GET","uri":"\/serps_weekly\/get_rankings.json\/{keyword}","summary":"SerpsWeekly API","parameters":{"keyword":{"location":"uri","required":true},"country":{"location":"query","required":false},"date":{"location":"query","required":false},"type":{"location":"query","required":false},"properties":{"location":"query","required":false},"dataProperties":{"location":"query","required":false},"limit":{"location":"query","required":false},"domain":{"location":"query","required":false}}},"serps_daily\/add_keyword":{"httpMethod":"GET","uri":"\/serps_daily\/add_keyword.json\/{keyword}","summary":"SerpsDaily API","parameters":{"keyword":{"location":"uri","required":true},"country":{"location":"query","required":false}}},"serps_daily\/delete_keyword":{"httpMethod":"DELETE","uri":"\/serps_daily\/delete_keyword.json\/{keyword}","summary":"SerpsDaily API","parameters":{"keyword":{"location":"uri","required":true}}},"serps_daily\/get_keywords":{"httpMethod":"GET","uri":"\/serps_daily\/get_keywords.json","summary":"SerpsDaily API","parameters":{"limit":{"location":"query","required":false},"offset":{"location":"query","required":false}}},"serps_daily\/get_rankings":{"httpMethod":"GET","uri":"\/serps_daily\/get_rankings.json\/{keyword}","summary":"SerpsDaily API","parameters":{"keyword":{"location":"uri","required":true},"country":{"location":"query","required":false},"date":{"location":"query","required":false},"type":{"location":"query","required":false},"properties":{"location":"query","required":false},"dataProperties":{"location":"query","required":false},"limit":{"location":"query","required":false},"domain":{"location":"query","required":false}}},"serps_direct\/get_rankings":{"httpMethod":"GET","uri":"\/serps_direct\/get_rankings.json\/{keyword}","summary":"SerpsDirect API","parameters":{"keyword":{"location":"uri","required":true},"type":{"location":"query","required":false},"properties":{"location":"query","required":false},"dataProperties":{"location":"query","required":false},"limit":{"location":"query","required":false},"domain":{"location":"query","required":false},"country":{"location":"query","required":false},"firstpage":{"location":"query","required":false}}},"urls\/pagerank":{"httpMethod":"GET","uri":"\/urls\/pagerank.json","summary":"LinkMetrics API","parameters":{"url":{"location":"query","required":true}}},"urls\/server":{"httpMethod":"GET","uri":"\/urls\/server.json","summary":"LinkMetrics API","parameters":{"url":{"location":"query","required":true}}},"urls\/url_check":{"httpMethod":"GET","uri":"\/urls\/url_check.json","summary":"LinkMetrics API","parameters":{"url":{"location":"query","required":true}}},"keywords\/difficulty":{"httpMethod":"GET","uri":"\/keywords\/difficulty.json\/{keyword}","summary":"Keywords API","parameters":{"keyword":{"location":"uri","required":true}}},"keywords\/user_intent":{"httpMethod":"GET","uri":"\/keywords\/user_intent.json\/{keyword}","summary":"Keywords API","parameters":{"keyword":{"location":"uri","required":true}}},"status\/get":{"httpMethod":"GET","uri":"\/status\/get.json","summary":"Status API"}}}
+{"baseUrl": "http:\/\/api.zedwoo-data.de", "operations": {
+	"account\/status": {
+		"httpMethod": "GET",
+		"uri": "\/account\/status.json",
+		"summary": "Account API"
+	},
+	"serps_weekly\/add_keyword": {
+		"httpMethod": "GET",
+		"uri": "\/serps_weekly\/add_keyword.json\/{keyword}",
+		"summary": "SerpsWeekly API",
+		"parameters": {
+			"keyword": {
+				"location": "uri",
+				"required": true
+			},
+			"country": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"serps_weekly\/delete_keyword": {
+		"httpMethod": "DELETE",
+		"uri": "\/serps_weekly\/delete_keyword.json\/{keyword}",
+		"summary": "SerpsWeekly API",
+		"parameters": {
+			"keyword": {
+				"location": "uri",
+				"required": true
+			}
+		}
+	},
+	"serps_weekly\/get_keywords": {
+		"httpMethod": "GET",
+		"uri": "\/serps_weekly\/get_keywords.json",
+		"summary": "SerpsWeekly API",
+		"parameters": {
+			"limit": {
+				"location": "query",
+				"required": false
+			},
+			"offset": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"serps_weekly\/get_rankings": {
+		"httpMethod": "GET",
+		"uri": "\/serps_weekly\/get_rankings.json\/{keyword}",
+		"summary": "SerpsWeekly API",
+		"parameters": {
+			"keyword": {
+				"location": "uri",
+				"required": true
+			},
+			"country": {
+				"location": "query",
+				"required": false
+			},
+			"date": {
+				"location": "query",
+				"required": false
+			},
+			"type": {
+				"location": "query",
+				"required": false
+			},
+			"properties": {
+				"location": "query",
+				"required": false
+			},
+			"dataProperties": {
+				"location": "query",
+				"required": false
+			},
+			"limit": {
+				"location": "query",
+				"required": false
+			},
+			"domain": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"serps_daily\/add_keyword": {
+		"httpMethod": "GET",
+		"uri": "\/serps_daily\/add_keyword.json\/{keyword}",
+		"summary": "SerpsDaily API",
+		"parameters": {
+			"keyword": {
+				"location": "uri",
+				"required": true
+			},
+			"country": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"serps_daily\/delete_keyword": {
+		"httpMethod": "DELETE",
+		"uri": "\/serps_daily\/delete_keyword.json\/{keyword}",
+		"summary": "SerpsDaily API",
+		"parameters": {
+			"keyword": {
+				"location": "uri",
+				"required": true
+			}
+		}
+	},
+	"serps_daily\/get_keywords": {
+		"httpMethod": "GET",
+		"uri": "\/serps_daily\/get_keywords.json",
+		"summary": "SerpsDaily API",
+		"parameters": {
+			"limit": {
+				"location": "query",
+				"required": false
+			},
+			"offset": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"serps_daily\/get_rankings": {
+		"httpMethod": "GET",
+		"uri": "\/serps_daily\/get_rankings.json\/{keyword}",
+		"summary": "SerpsDaily API",
+		"parameters": {
+			"keyword": {
+				"location": "uri",
+				"required": true
+			},
+			"country": {
+				"location": "query",
+				"required": false
+			},
+			"date": {
+				"location": "query",
+				"required": false
+			},
+			"type": {
+				"location": "query",
+				"required": false
+			},
+			"properties": {
+				"location": "query",
+				"required": false
+			},
+			"dataProperties": {
+				"location": "query",
+				"required": false
+			},
+			"limit": {
+				"location": "query",
+				"required": false
+			},
+			"domain": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"serps_direct\/get_rankings": {
+		"httpMethod": "GET",
+		"uri": "\/serps_direct\/get_rankings.json\/{keyword}",
+		"summary": "SerpsDirect API",
+		"parameters": {
+			"keyword": {
+				"location": "uri",
+				"required": true
+			},
+			"type": {
+				"location": "query",
+				"required": false
+			},
+			"properties": {
+				"location": "query",
+				"required": false
+			},
+			"dataProperties": {
+				"location": "query",
+				"required": false
+			},
+			"limit": {
+				"location": "query",
+				"required": false
+			},
+			"domain": {
+				"location": "query",
+				"required": false
+			},
+			"country": {
+				"location": "query",
+				"required": false
+			},
+			"firstpage": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"urls\/pagerank": {
+		"httpMethod": "GET",
+		"uri": "\/urls\/pagerank.json",
+		"summary": "LinkMetrics API",
+		"parameters": {
+			"url": {
+				"location": "query",
+				"required": true
+			}
+		}
+	},
+	"urls\/server": {
+		"httpMethod": "GET",
+		"uri": "\/urls\/server.json",
+		"summary": "LinkMetrics API",
+		"parameters": {
+			"url": {
+				"location": "query",
+				"required": true
+			}
+		}
+	},
+	"urls\/url_check": {
+		"httpMethod": "GET",
+		"uri": "\/urls\/url_check.json",
+		"summary": "LinkMetrics API",
+		"parameters": {
+			"url": {
+				"location": "query",
+				"required": true
+			}
+		}
+	},
+	"keywords\/difficulty": {
+		"httpMethod": "GET",
+		"uri": "\/keywords\/difficulty.json\/{keyword}",
+		"summary": "Keywords API",
+		"parameters": {
+			"keyword": {
+				"location": "uri",
+				"required": true
+			}
+		}
+	},
+	"keywords\/user_intent": {
+		"httpMethod": "GET",
+		"uri": "\/keywords\/user_intent.json\/{keyword}",
+		"summary": "Keywords API",
+		"parameters": {
+			"keyword": {
+				"location": "uri",
+				"required": true
+			}
+		}
+	},
+	"status\/get": {
+		"httpMethod": "GET",
+		"uri": "\/status\/get.json",
+		"summary": "Status API"
+	}
+}}
