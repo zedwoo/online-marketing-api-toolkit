@@ -27,7 +27,7 @@ class MozClient extends Client
 		];
 
 		$required = [
-			'AccessID',
+			'accessID',
 			'secretKey'
 		];
 

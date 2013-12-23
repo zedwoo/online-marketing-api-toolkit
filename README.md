@@ -12,7 +12,7 @@ Dadurch hat man für alle APIs die tollen Möglichkeiten von Guzzle:
 
 ##Welche?
 Aktuell sind folgende APIs in dieser Library implementiert:
-* [Sistrix](/src/Zedwoo/OnlineMarketingApiToolkit/Sistrix/Sistrix-README.md)
+* [Sistrix](/src/Zedwoo/OnlineMarketingApiToolkit/Sistrix/Sistrix-Readme.md)
 * [Moz](/src/Zedwoo/OnlineMarketingApiToolkit/Moz/Moz-README.md)
 * [OmData](/src/Zedwoo/OnlineMarketingApiToolkit/OmData/OmData-README.md)
 
@@ -47,7 +47,7 @@ $result = $command->execute(); // returns an array with the result
 Für jede APi gibt es eine kurze Doku und eine Datei im Json-Schema. Siehe die Links unter "Welche?".
 
 
-Contributing
+##Contributing
 
     Fork it
     Create your feature branch (git checkout -b my-new-feature)
