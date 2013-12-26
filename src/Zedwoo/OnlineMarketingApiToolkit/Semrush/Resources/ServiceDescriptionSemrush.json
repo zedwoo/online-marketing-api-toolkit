@@ -1,0 +1,1310 @@
+{"description": "Semrush API", "operations": {
+	"domain_rank": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=domain_rank",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"domain_rank_history": {
+		"uri": "http:\/\/{db}.api.semrush.com\/?action=report&type=domain_rank_history",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"display_daily": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"rank_difference": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=rank_difference",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"rank": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=rank",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"queries_api": {
+		"uri": "http:\/\/logs.backend.semrush.com\/?action=report&type=queries_api",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"queries_export": {
+		"uri": "http:\/\/logs.backend.semrush.com\/?action=report&type=queries_export",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"domain_organic": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=domain_organic",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			},
+			"display_positions": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"domain_adwords": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=domain_adwords",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			},
+			"display_positions": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"domain_organic_organic": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=domain_organic_organic",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"domain_adwords_adwords": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=domain_adwords_adwords",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"domain_organic_adwords": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=domain_organic_adwords",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"domain_adwords_organic": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=domain_adwords_organic",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"domain_adwords_historical": {
+		"uri": "http:\/\/{db}.api.semrush.com\/?action=report&type=domain_adwords_historical",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"domain_domains": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=domain_domains",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"domains": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"phrase": {
+		"uri": "http:\/\/ranks.semrush.com\/?action=report&type=phrase",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"phrase": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"database": {
+				"location": "query",
+				"required": false
+			},
+			"display_date": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"phrase_this": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=phrase_this",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"phrase": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"phrase_organic": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=phrase_organic",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"phrase": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"phrase_related": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=phrase_related",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"phrase": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"phrase_adwords_historical": {
+		"uri": "http:\/\/{db}.api.semrush.com\/?action=report&type=phrase_adwords_historical",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"phrase": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"phrase_fullsearch": {
+		"uri": "http:\/\/{db}.fullsearch-api.semrush.com\/?action=report&type=phrase_fullsearch",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"phrase": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"url_organic": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=url_organic",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"url": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"url_adwords": {
+		"uri": "http:\/\/{date}{db}.api.semrush.com\/?action=report&type=url_adwords",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"db": {
+				"location": "uri",
+				"default": "de"
+			},
+			"date": {
+				"location": "uri"
+			},
+			"url": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"export_decode": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"publisher_text_ads": {
+		"uri": "http:\/\/api.asns.backend.semrush.com\/?action=report&type=publisher_text_ads",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"device_type": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"publisher_advertisers": {
+		"uri": "http:\/\/api.asns.backend.semrush.com\/?action=report&type=publisher_advertisers",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"device_type": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"advertiser_publishers": {
+		"uri": "http:\/\/api.asns.backend.semrush.com\/?action=report&type=advertiser_publishers",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"device_type": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"advertiser_text_ads": {
+		"uri": "http:\/\/api.asns.backend.semrush.com\/?action=report&type=advertiser_text_ads",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"device_type": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"advertiser_landings": {
+		"uri": "http:\/\/api.asns.backend.semrush.com\/?action=report&type=advertiser_landings",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"device_type": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"advertiser_publisher_text_ads": {
+		"uri": "http:\/\/api.asns.backend.semrush.com\/?action=report&type=advertiser_publisher_text_ads",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			},
+			"device_type": {
+				"location": "query",
+				"required": false
+			},
+			"display_filter": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"advertiser_rank": {
+		"uri": "http:\/\/api.asns.backend.semrush.com\/?action=report&type=advertiser_rank",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"device_type": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"publisher_rank": {
+		"uri": "http:\/\/api.asns.backend.semrush.com\/?action=report&type=publisher_rank",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"export": {
+				"location": "query",
+				"default": "api"
+			},
+			"export_escape": {
+				"location": "query",
+				"default": "1"
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"device_type": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"links_domain": {
+		"uri": "http:\/\/api.semrush.com\/analytics\/v1\/?action=report&type=links_domain",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"links_hostname": {
+		"uri": "http:\/\/api.semrush.com\/analytics\/v1\/?action=report&type=links_hostname",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			}
+		}
+	},
+	"links": {
+		"uri": "http:\/\/api.semrush.com\/analytics\/v1\/?action=report&type=links",
+		"httpMethod": "GET",
+		"responseClass": "Zedwoo\\OnlineMarketingApiToolkit\\Semrush\\SemrushParseCsv",
+		"parameters": {
+			"domain": {
+				"location": "query",
+				"required": true
+			},
+			"display_limit": {
+				"location": "query",
+				"required": false
+			},
+			"display_offset": {
+				"location": "query",
+				"required": false
+			},
+			"export_columns": {
+				"location": "query",
+				"required": false
+			},
+			"display_sort": {
+				"location": "query",
+				"required": false
+			}
+		}
+	}
+}}
