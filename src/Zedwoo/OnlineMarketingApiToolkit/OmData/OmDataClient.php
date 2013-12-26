@@ -19,7 +19,7 @@ class OmDataClient extends Client
      * @return OmDataClient
      * @throws \Guzzle\Common\Exception\InvalidArgumentException
      */
-    public static function factory($config = [])
+    public static function factory($config = array())
     {
         $default = ['base_url' => 'http://api.zedwoo-data.de/'];
 
