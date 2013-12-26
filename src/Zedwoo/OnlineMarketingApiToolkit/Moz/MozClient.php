@@ -27,8 +27,8 @@ class MozClient extends Client
 		];
 
 		$required = [
-			'accessID',
-			'secretKey'
+			'AccessID',
+			'SecretKey'
 		];
 
 		foreach ($required as $value) {
@@ -39,7 +39,7 @@ class MozClient extends Client
 
 		$config = Collection::fromConfig($config, $default, $required);
 
-		$credentials = self::calculateCredentials($config->get('AccessID'),$config->get('secretKey'),$config->get('expiresInterval'));
+		$credentials = self::calculateCredentials($config->get('AccessID'),$config->get('SecretKey'),$config->get('expiresInterval'));
 
 		$client = new self($config->get('base_url'), $config);
 

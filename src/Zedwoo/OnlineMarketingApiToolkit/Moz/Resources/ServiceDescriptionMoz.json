@@ -13,8 +13,20 @@
 				"location": "query",
 				"required": true
 			}
-		}
-		},
+		}},
+		"url-metrics-batch": {
+			"httpMethod": "POST",
+			"uri": "/linkscape/url-metrics/",
+			"parameters": {
+				"urls": {
+					"location": "body",
+					"required": true
+				},
+				"Cols": {
+					"location": "query",
+					"required": true
+				}
+			}},
 		"link-metrics": {
 			"httpMethod": "GET",
 			"uri": "/linkscape/links/{url}",
