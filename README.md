@@ -21,10 +21,27 @@ Aktuell sind folgende APIs in dieser Library implementiert:
 Das Online-Marketing-Api-Toolkit ist über Packagist ([zedwoo/online-marketing-api-toolkit](https://packagist.org/packages/zedwoo/online-marketing-api-toolkit)) erhältlich und damit über
 [Composer](http://getcomposer.org/) installierbar.
 
+###Composer installieren (bei Bedarf)
+Wenn Composer bisher nicht benutzt wurde und nicht installiert wurde, dann einfach installieren:
+```
+ curl -sS https://getcomposer.org/installer | php
+```
+Weitere Möglichkeiten der Installation sind hier beschrieben:
+https://getcomposer.org/download/
+
 Wenn Composer nicht benutzt werden soll, dann den Code einfach von Github downloaden und mit einem PSR-0 kompatiblen Autoaloader laden.
 
-###Composer Beispiel
-OnlineMarketingApiToolkit in composer.json hinzufügen:
+###Neues Projekt erstellen
+Du kannst dir ein neues Projekt anlegen, in dem du folgende Zeile ausführst:
+```
+php composer.phar create-project zedwoo/online-marketing-api-toolkit projekt_name
+```
+Dabei einfach "projekt_name" durch einen eigenen Namen ersetzen.
+
+
+Oder einfacher:
+###Composer Beispiel für bestehendes Projekt
+OnlineMarketingApiToolkit in composer.json hinzufügen bzw. Datei erstellen:
 ```js
 {
     "require": {
@@ -32,12 +49,17 @@ OnlineMarketingApiToolkit in composer.json hinzufügen:
     }
 }
 ```
+Und dann folgendes Zeile ausführen:
+```
+php composer.phar install
+```
 
 ##Nutzung
 Die Nutzung der unterschiedlichen Clients ist immer ähnlich.
 Beispiel Sistrix:
 
 ```php
+require_once('vendor/autoload.php'); // Autoloaderaufruf von Composer
 use Zedwoo\OnlineMarketingApiToolkit\Sistrix\SistrixClient;
 $client = SistrixClient::factory(array(
 									 'api_key' => 'SISTRIX_API-Key'

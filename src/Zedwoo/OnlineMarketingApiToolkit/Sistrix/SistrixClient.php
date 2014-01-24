@@ -19,16 +19,16 @@ class SistrixClient extends Client
 	 * @return SistrixClient
 	 * @throws \Guzzle\Common\Exception\InvalidArgumentException
 	 */
-	public static function factory($config = [])
+	public static function factory($config = array())
 	{
-		$default = [
+		$default = array(
 			'base_url' => 'http://api.sistrix.net/',
 			'format' => 'json'
-	];
+		);
 
-		$required = [
+		$required = array(
 			'api_key'
-		];
+		);
 
 		foreach ($required as $value) {
 			if (empty($config[$value])) {
@@ -40,10 +40,10 @@ class SistrixClient extends Client
 
 		$client = new self($config->get('base_url'), $config);
 
-		$client->setDefaultOption('query', [
+		$client->setDefaultOption('query', array(
 										   'api_key' => $config->get('api_key'),
 										   'format' => $config->get('format')
-										   ]);
+										   ));
 
 		$client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/ServiceDescriptionSistrix.json'));
 

@@ -19,7 +19,7 @@ class SemrushClient extends Client
 	 * @return SemrushClient
 	 * @throws \Guzzle\Common\Exception\InvalidArgumentException
 	 */
-	public static function factory($config = [])
+	public static function factory($config = array())
 	{
 		$default = array();
 		$required = [
@@ -36,9 +36,9 @@ class SemrushClient extends Client
 
 		$client = new self('', $config);
 
-		$client->setDefaultOption('query', [
+		$client->setDefaultOption('query', array(
 										   'key' => $config->get('api_key')
-										   ]);
+										   ));
 
 		$client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/ServiceDescriptionSemrush.json'));
 

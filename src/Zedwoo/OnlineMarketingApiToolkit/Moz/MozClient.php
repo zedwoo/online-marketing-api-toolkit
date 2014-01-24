@@ -19,17 +19,17 @@ class MozClient extends Client
 	 * @return MozClient
 	 * @throws \Guzzle\Common\Exception\InvalidArgumentException
 	 */
-	public static function factory($config = [])
+	public static function factory($config = array())
 	{
-		$default = [
+		$default = array(
 			'base_url' => 'http://lsapi.seomoz.com',
 			'expiresSeconds' => '3600'
-		];
+		);
 
-		$required = [
+		$required = array(
 			'AccessID',
 			'SecretKey'
-		];
+		);
 
 		foreach ($required as $value) {
 			if (empty($config[$value])) {
@@ -43,11 +43,11 @@ class MozClient extends Client
 
 		$client = new self($config->get('base_url'), $config);
 
-		$client->setDefaultOption('query', [
+		$client->setDefaultOption('query', array(
 										   'AccessID' => $config->get('AccessID'),
 										   'Expires' => $credentials['expires'],
 										   'Signature' => $credentials['signature']
-										   ]);
+										   ));
 		$client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/ServiceDescriptionMoz.json'));
 
 		$client->setUserAgent('OnlineMarketingApiToolkit');
