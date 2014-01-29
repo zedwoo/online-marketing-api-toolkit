@@ -21,11 +21,11 @@ class OmDataClient extends Client
      */
     public static function factory($config = array())
     {
-        $default = ['base_url' => 'http://api.zedwoo-data.de/'];
+        $default = array('base_url' => 'http://api.zedwoo-data.de/');
 
-        $required = [
+        $required = array(
             'api_key'
-        ];
+		);
 
         foreach ($required as $value) {
             if (empty($config[$value])) {
@@ -37,9 +37,9 @@ class OmDataClient extends Client
 
         $client = new self($config->get('base_url'), $config);
 
-        $client->setDefaultOption('query', [
+        $client->setDefaultOption('query', array(
             'api_key' => $config['api_key']
-        ]);
+										   ));
 
         $client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/ServiceDescriptionOmData.json'));
         $client->setUserAgent('OnlineMarketingApiToolkit');
