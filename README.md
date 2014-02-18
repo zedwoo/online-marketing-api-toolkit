@@ -1,3 +1,4 @@
+[![Latest Stable Version](https://poser.pugx.org/zedwoo/online-marketing-api-toolkit/v/stable.png)](https://packagist.org/packages/zedwoo/online-marketing-api-toolkit) [![Total Downloads](https://poser.pugx.org/zedwoo/online-marketing-api-toolkit/downloads.png)](https://packagist.org/packages/zedwoo/online-marketing-api-toolkit) [![Latest Unstable Version](https://poser.pugx.org/zedwoo/online-marketing-api-toolkit/v/unstable.png)](https://packagist.org/packages/zedwoo/online-marketing-api-toolkit) [![License](https://poser.pugx.org/zedwoo/online-marketing-api-toolkit/license.png)](https://packagist.org/packages/zedwoo/online-marketing-api-toolkit)
 #Online-Marketing-Api-Toolkit
 
 ##Was?
