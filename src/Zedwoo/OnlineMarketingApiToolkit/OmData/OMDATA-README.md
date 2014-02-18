@@ -1,5 +1,7 @@
 #OnlineMarketingApiToolkit: OmDataClient
 
+Mehr Info zu OmData: http://www.omdata.de
+
 Der OmData-Client beinhaltet alle Endpoints der API unter: http://api.zedwoo-data.de/explorer/
 
 Beispiel:
