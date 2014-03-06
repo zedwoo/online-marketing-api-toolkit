@@ -26,4 +26,4 @@ $command = $client->getCommand('url-metrics-batch', array(
 ```
 
 Weitere Infos bietet die entsprechende JSON-Datei:
-[ServiceDescriptionSistrix.json](/Resources/ServiceDescriptionMoz.json)
+[ServiceDescriptionMoz.json](https://github.com/zedwoo/online-marketing-api-toolkit/blob/master/src/Zedwoo/OnlineMarketingApiToolkit/Moz/Resources/ServiceDescriptionMoz.json)

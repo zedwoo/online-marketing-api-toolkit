@@ -20,4 +20,4 @@ $result = $command->execute(); // returns an array with the result
 ```
 
 Weitere Infos bietet die entsprechende JSON-Datei:
-[ServiceDescriptionOmdata.json](/src/Zedwoo/OnlineMarketingApiToolkit/OmData//Resources/ServiceDescriptionOmData.json)
+[ServiceDescriptionOmdata.json](https://github.com/zedwoo/online-marketing-api-toolkit/blob/master/src/Zedwoo/OnlineMarketingApiToolkit/OmData/Resources/ServiceDescriptionOmdata.json)
