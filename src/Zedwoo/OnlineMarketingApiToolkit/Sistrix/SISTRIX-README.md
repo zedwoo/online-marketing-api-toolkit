@@ -17,4 +17,4 @@ $result = $command->execute(); // returns an array with the result
 ```
 
 Weitere Infos bietet die entsprechende JSON-Datei:
-[ServiceDescriptionSistrix.json](/Resources/ServiceDescriptionSistrix.json)
+[ServiceDescriptionSistrix.json](https://github.com/zedwoo/online-marketing-api-toolkit/blob/master/src/Zedwoo/OnlineMarketingApiToolkit/Sistrix/Resources/ServiceDescriptionSistrix.json)
