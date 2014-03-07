@@ -1,6 +1,6 @@
 #OnlineMarketingApiToolkit: SemrushClient
 
-Der Moz-Client beinhaltet alle Endpoints der API unter: http://de.semrush.com/api.html
+Der SEMrush-Client beinhaltet alle Endpoints der API unter: http://de.semrush.com/api.html
 
 Beispiel:
 
