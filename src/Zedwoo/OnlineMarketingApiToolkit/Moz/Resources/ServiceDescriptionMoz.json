@@ -14,6 +14,9 @@
 				"required": true
 			}
 		}},
+		"urlMetrics": {
+			"extends": "url-metrics"
+		},
 		"url-metrics-batch": {
 			"httpMethod": "POST",
 			"uri": "/linkscape/url-metrics/",
@@ -27,6 +30,9 @@
 					"required": true
 				}
 			}},
+		"urlMetricsBatch": {
+			"extends": "url-metrics-batch"
+		},
 		"link-metrics": {
 			"httpMethod": "GET",
 			"uri": "/linkscape/links/{url}",
@@ -69,6 +75,9 @@
 				}
 			}
 		},
+		"linkMetrics": {
+			"extends": "link-metrics"
+		},
 		"anchor-text": {
 			"httpMethod": "GET",
 			"uri": "/linkscape/anchor-text/{url}",
@@ -103,6 +112,9 @@
 				}
 			}
 		},
+		"anchorText": {
+			"extends": "anchor-text"
+		},
 		"top-pages": {
 			"httpMethod": "GET",
 			"uri": "/linkscape/top-pages/{domain}",
@@ -133,17 +145,29 @@
 				}
 			}
 		},
+		"topPages": {
+			"extends": "top-pages"
+		},
 		"metadata/last_update": {
 			"httpMethod": "GET",
 			"uri": "/linkscape/metadata/last_update.json"
+		},
+		"metadataLastUpdate": {
+			"extends": "metadata/last_update"
 		},
 		"metadata/next_update": {
 			"httpMethod": "GET",
 			"uri": "/linkscape/metadata/next_update.json"
 		},
+		"metadataNextUpdate": {
+			"extends": "metadata/next_update"
+		},
 		"metadata/index_stats": {
 			"httpMethod": "GET",
 			"uri": "/linkscape/metadata/index_stats"
+		},
+		"metadataIndexStats": {
+			"extends": "metadata/index_stats"
 		}
 	}
 

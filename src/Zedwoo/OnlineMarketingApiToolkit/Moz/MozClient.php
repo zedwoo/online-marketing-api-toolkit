@@ -6,11 +6,21 @@ use Guzzle\Service\Client;
 use Guzzle\Service\Description\ServiceDescription;
 use Guzzle\Service\Builder\ServiceBuilder;
 use Guzzle\Common\Exception\InvalidArgumentException;
+use Guzzle\Service\Resource\Model;
 
 
 /**
  * Class MozClient
  * @package Zedwoo\OnlineMarketingApiToolkit\Moz
+ *
+ * @method  model urlMetrics (array $args = array()) {@command Moz urlMetrics}
+ * @method  model urlMetricsBatch (array $args = array()) {@command Moz urlMetricsBatch}
+ * @method  model linkMetrics (array $args = array()) {@command Moz linkMetrics}
+ * @method  model anchorText (array $args = array()) {@command Moz anchorText}
+ * @method  model topPages (array $args = array()) {@command Moz topPages}
+ * @method  model metadataLastUpdate () {@command Moz metadataLastUpdate}
+ * @method  model metadataNextUpdate () {@command Moz metadataNextUpdate}
+ * @method  model metadataIndexStats () {@command Moz metadataIndexStats}
  */
 class MozClient extends Client
 {
