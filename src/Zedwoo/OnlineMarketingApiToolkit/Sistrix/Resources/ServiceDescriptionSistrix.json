@@ -27,6 +27,9 @@
 			"extends": "domain"
 
 		},
+		"domainOverview": {
+			"extends": "domain.overview"
+		},
 		"domain.sichtbarkeitsindex": {
 			"httpMethod": "GET",
 			"uri": "domain.sichtbarkeitsindex",
@@ -42,6 +45,9 @@
 				}
 			}
 		},
+		"domainSichtbarkeitsindex": {
+			"extends": "domain.sichtbarkeitsindex"
+		},
 		"domain.pages": {
 			"httpMethod": "GET",
 			"uri": "domain.pages",
@@ -52,6 +58,9 @@
 					"required": false
 				}
 			}
+		},
+		"domainPages": {
+			"extends": "domain.pages"
 		},
 		"domain.pagerank": {
 			"httpMethod": "GET",
@@ -64,10 +73,16 @@
 				}
 			}
 		},
+		"domainPagerank": {
+			"extends": "domain.pagerank"
+		},
 		"domain.age": {
 			"httpMethod": "GET",
 			"uri": "domain.age",
 			"extends": "domain"
+		},
+		"domainAge": {
+			"extends": "domain.age"
 		},
 		"domain.competitors.seo": {
 			"httpMethod": "GET",
@@ -80,6 +95,9 @@
 				}
 			}
 		},
+		"domainCompetitorsSeo": {
+			"extends": "domain.competitors.seo"
+		},
 		"domain.competitors.sem": {
 			"httpMethod": "GET",
 			"uri": "domain.competitors.sem",
@@ -90,6 +108,9 @@
 					"required": false
 				}
 			}
+		},
+		"domainCompetitorsSem": {
+			"extends": "domain.competitors.sem"
 		},
 		"domain.competitors.us": {
 			"httpMethod": "GET",
@@ -102,6 +123,9 @@
 				}
 			}
 		},
+		"domainCompetitorsUs": {
+			"extends": "domain.competitors.us"
+		},
 		"domain.kwcount.seo": {
 			"httpMethod": "GET",
 			"uri": "domain.kwcount.seo",
@@ -112,6 +136,9 @@
 					"required": false
 				}
 			}
+		},
+		"domainKwcountSeo": {
+			"extends": "domain.kwcount.seo"
 		},
 		"domain.kwcount.seo.top10": {
 			"httpMethod": "GET",
@@ -124,6 +151,9 @@
 				}
 			}
 		},
+		"domainKwcountSeoTop10": {
+			"extends": "domain.kwcount.seo.top10"
+		},
 		"domain.kwcount.sem": {
 			"httpMethod": "GET",
 			"uri": "domain.kwcount.sem",
@@ -134,6 +164,9 @@
 					"required": false
 				}
 			}
+		},
+		"domainKwcountSem": {
+			"extends": "domain.kwcount.sem"
 		},
 		"domain.kwcount.us": {
 			"httpMethod": "GET",
@@ -146,10 +179,16 @@
 				}
 			}
 		},
+		"domainKwcountUs": {
+			"extends": "domain.kwcount.us"
+		},
 		"domain.social.overview": {
 			"httpMethod": "GET",
 			"uri": "domain.social.overview",
 			"extends": "domain"
+		},
+		"domainSocialOverview": {
+			"extends": "domain.social.overview"
 		},
 		"domain.social.top": {
 			"httpMethod": "GET",
@@ -166,6 +205,9 @@
 				}
 			}
 		},
+		"domainSocialTop": {
+			"extends": "domain.social.top"
+		},
 		"domain.social.latest": {
 			"httpMethod": "GET",
 			"uri": "domain.social.latest",
@@ -181,6 +223,9 @@
 				}
 			}
 		},
+		"domainSocialLatest": {
+			"extends": "domain.social.latest"
+		},
 		"domain.social.url": {
 			"httpMethod": "GET",
 			"uri": "domain.social.url",
@@ -195,6 +240,9 @@
 					"required": false
 				}
 			}
+		},
+		"domainSocialUrl": {
+			"extends": "domain.social.url"
 		},
 		"keyword": {
 			"httpMethod": "GET",
@@ -233,6 +281,9 @@
 				}
 			}
 		},
+		"keywordSeo": {
+			"extends": "keyword.seo"
+		},
 		"keyword.sem": {
 			"httpMethod": "GET",
 			"uri": "keyword.sem",
@@ -252,6 +303,9 @@
 				}
 			}
 		},
+		"keywordSem": {
+			"extends": "keyword.sem"
+		},
 		"keyword.us": {
 			"httpMethod": "GET",
 			"uri": "keyword.us",
@@ -262,6 +316,9 @@
 					"required": false
 				}
 			}
+		},
+		"keywordUs": {
+			"extends": "keyword.us"
 		},
 		"keyword.domain.seo": {
 			"httpMethod": "GET",
@@ -305,6 +362,9 @@
 				}
 			}
 		},
+		"keywordDomainSeo": {
+			"extends": "keyword.domain.seo"
+		},
 		"keyword.domain.sem": {
 			"httpMethod": "GET",
 			"uri": "keyword.domain.sem",
@@ -326,6 +386,9 @@
 					"required": false
 				}
 			}
+		},
+		"keywordDomainSem": {
+			"extends": "keyword.domain.sem"
 		},
 		"keyword.domain.us": {
 			"httpMethod": "GET",
@@ -349,6 +412,9 @@
 				}
 			}
 		},
+		"keywordDomainUs": {
+			"extends": "keyword.domain.us"
+		},
 		"links.overview": {
 			"httpMethod": "GET",
 			"uri": "links.overview",
@@ -363,6 +429,9 @@
 				}
 			}
 		},
+		"linksOverview": {
+			"extends": "links.overview"
+		},
 		"links.list": {
 			"httpMethod": "GET",
 			"uri": "links.list",
@@ -373,6 +442,9 @@
 					"required": false
 				}
 			}
+		},
+		"linksList": {
+			"extends": "links.list"
 		},
 		"links.linktargets": {
 			"httpMethod": "GET",
@@ -385,6 +457,9 @@
 				}
 			}
 		},
+		"linksLinktargets": {
+			"extends": "links.linktargets"
+		},
 		"links.linktexts": {
 			"httpMethod": "GET",
 			"uri": "links.linktexts",
@@ -396,9 +471,15 @@
 				}
 			}
 		},
+		"linksLinktexts": {
+			"extends": "links.linktexts"
+		},
 		"monitoring.projects": {
 			"httpMethod": "GET",
 			"uri": "monitoring.projects"
+		},
+		"monitoringProjects": {
+			"extends": "monitoring.projects"
 		},
 		"monitoring.folders": {
 			"httpMethod": "GET",
@@ -410,6 +491,9 @@
 				}
 			}
 		},
+		"monitoringFolders": {
+			"extends": "monitoring.folders"
+		},
 		"monitoring.folder": {
 			"httpMethod": "GET",
 			"uri": "monitoring.folder",
@@ -420,6 +504,9 @@
 					"required": false
 				}
 			}
+		},
+		"monitoringFolder": {
+			"extends": "monitoring.folder"
 		},
 		"monitoring.check": {
 			"httpMethod": "GET",
@@ -436,6 +523,9 @@
 				}
 			}
 		},
+		"monitoringCheck": {
+			"extends": "monitoring.check"
+		},
 		"monitoring.reports": {
 			"httpMethod": "GET",
 			"uri": "monitoring.reports",
@@ -445,6 +535,9 @@
 					"required": false
 				}
 			}
+		},
+		"monitoringReports": {
+			"extends": "monitoring.reports"
 		},
 		"monitoring.report": {
 			"httpMethod": "GET",
@@ -457,6 +550,9 @@
 				}
 			}
 		},
+		"monitoringReport": {
+			"extends": "monitoring.report"
+		},
 		"monitoring.report.download": {
 			"httpMethod": "GET",
 			"uri": "monitoring.report.download",
@@ -467,5 +563,9 @@
 					"required": false
 				}
 			}
+		},
+		"monitoringReportDownload": {
+			"extends": "monitoring.report.download"
 		}
+
 	}}
