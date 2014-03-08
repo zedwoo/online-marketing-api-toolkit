@@ -4,6 +4,9 @@
 		"uri": "\/account\/status.json",
 		"summary": "Account API"
 	},
+	"accountStatus": {
+		"extends": "account\/status"
+	},
 	"serps_weekly\/add_keyword": {
 		"httpMethod": "GET",
 		"uri": "\/serps_weekly\/add_keyword.json\/{keyword}",
@@ -19,6 +22,9 @@
 			}
 		}
 	},
+	"serpsWeeklyAddKeyword": {
+		"extends": "serps_weekly\/add_keyword"
+	},
 	"serps_weekly\/delete_keyword": {
 		"httpMethod": "DELETE",
 		"uri": "\/serps_weekly\/delete_keyword.json\/{keyword}",
@@ -30,7 +36,10 @@
 			}
 		}
 	},
-	"serps_weekly\/get_keywords": {
+	"serpsWeeklyDeleteKeyword": {
+		"extends": "serps_weekly\/delete_keyword"
+	},
+	"serps_weeklyget\/keywords": {
 		"httpMethod": "GET",
 		"uri": "\/serps_weekly\/get_keywords.json",
 		"summary": "SerpsWeekly API",
@@ -44,6 +53,9 @@
 				"required": false
 			}
 		}
+	},
+	"serpsWeeklyGetKeywords": {
+		"extends": "serps_weeklyget\/keywords"
 	},
 	"serps_weekly\/get_rankings": {
 		"httpMethod": "GET",
@@ -84,6 +96,9 @@
 			}
 		}
 	},
+	"serpsWeeklyGetRankings": {
+		"extends": "serps_weekly\/get_rankings"
+	},
 	"serps_daily\/add_keyword": {
 		"httpMethod": "GET",
 		"uri": "\/serps_daily\/add_keyword.json\/{keyword}",
@@ -99,6 +114,9 @@
 			}
 		}
 	},
+	"serpsDailyAddKeyword": {
+		"extends": "serps_daily\/add_keyword"
+	},
 	"serps_daily\/delete_keyword": {
 		"httpMethod": "DELETE",
 		"uri": "\/serps_daily\/delete_keyword.json\/{keyword}",
@@ -109,6 +127,9 @@
 				"required": true
 			}
 		}
+	},
+	"serpsDailyDeleteKeyword": {
+		"extends": "serps_daily\/delete_keyword"
 	},
 	"serps_daily\/get_keywords": {
 		"httpMethod": "GET",
@@ -124,6 +145,9 @@
 				"required": false
 			}
 		}
+	},
+	"serpsDailyGetKeywords": {
+		"extends": "serps_daily\/get_keywords"
 	},
 	"serps_daily\/get_rankings": {
 		"httpMethod": "GET",
@@ -164,6 +188,9 @@
 			}
 		}
 	},
+	"serpsDailyGetRankings": {
+		"extends": "serps_daily\/get_rankings"
+	},
 	"serps_direct\/get_rankings": {
 		"httpMethod": "GET",
 		"uri": "\/serps_direct\/get_rankings.json\/{keyword}",
@@ -203,6 +230,9 @@
 			}
 		}
 	},
+	"serpsDirectGetRankings": {
+		"extends": "serps_direct\/get_rankings"
+	},
 	"urls\/pagerank": {
 		"httpMethod": "GET",
 		"uri": "\/urls\/pagerank.json",
@@ -213,6 +243,9 @@
 				"required": true
 			}
 		}
+	},
+	"urlsPagerank": {
+		"extends": "urls\/pagerank"
 	},
 	"urls\/server": {
 		"httpMethod": "GET",
@@ -225,6 +258,9 @@
 			}
 		}
 	},
+	"urlsServer": {
+		"extends": "urls\/server"
+	},
 	"urls\/url_check": {
 		"httpMethod": "GET",
 		"uri": "\/urls\/url_check.json",
@@ -235,6 +271,9 @@
 				"required": true
 			}
 		}
+	},
+	"urlsUrlCheck": {
+		"extends": "urls\/url_check"
 	},
 	"keywords\/difficulty": {
 		"httpMethod": "GET",
@@ -247,6 +286,9 @@
 			}
 		}
 	},
+	"keywordsDifficulty": {
+		"extends": "keywords\/difficulty"
+	},
 	"keywords\/user_intent": {
 		"httpMethod": "GET",
 		"uri": "\/keywords\/user_intent.json\/{keyword}",
@@ -258,9 +300,16 @@
 			}
 		}
 	},
+	"keywordsUserIntent": {
+		"extends": "keywords\/user_intent"
+	},
 	"status\/get": {
 		"httpMethod": "GET",
 		"uri": "\/status\/get.json",
 		"summary": "Status API"
+	},
+	"statusGet": {
+		"extends": "status\/get"
 	}
-}}
+}
+}
