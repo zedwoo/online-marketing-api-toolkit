@@ -1306,5 +1306,66 @@
 				"required": false
 			}
 		}
+	},
+	"domainRank": {
+		"extends": "domain_rank"
+	}, "domainRankHistory": {
+		"extends": "domain_rank_history"
+	}, "rankDifference": {
+		"extends": "rank_difference"
+	}, "queriesApi": {
+		"extends": "queries_api"
+	}, "queriesExport": {
+		"extends": "queries_export"
+	}, "domainOrganic": {
+		"extends": "domain_organic"
+	}, "domainAdwords": {
+		"extends": "domain_adwords"
+	}, "domainOrganicOrganic": {
+		"extends": "domain_organic_organic"
+	}, "domainAdwordsAdwords": {
+		"extends": "domain_adwords_adwords"
+	}, "domainOrganicAdwords": {
+		"extends": "domain_organic_adwords"
+	}, "domainAdwordsOrganic": {
+		"extends": "domain_adwords_organic"
+	}, "domainAdwordsHistorical": {
+		"extends": "domain_adwords_historical"
+	}, "domainDomains": {
+		"extends": "domain_domains"
+	}, "phraseThis": {
+		"extends": "phrase_this"
+	}, "phraseOrganic": {
+		"extends": "phrase_organic"
+	}, "phraseRelated": {
+		"extends": "phrase_related"
+	}, "phraseAdwordsHistorical": {
+		"extends": "phrase_adwords_historical"
+	}, "phraseFullsearch": {
+		"extends": "phrase_fullsearch"
+	}, "urlOrganic": {
+		"extends": "url_organic"
+	}, "urlAdwords": {
+		"extends": "url_adwords"
+	}, "publisherTextAds": {
+		"extends": "publisher_text_ads"
+	}, "publisherAdvertisers": {
+		"extends": "publisher_advertisers"
+	}, "advertiserPublishers": {
+		"extends": "advertiser_publishers"
+	}, "advertiserTextAds": {
+		"extends": "advertiser_text_ads"
+	}, "advertiserLandings": {
+		"extends": "advertiser_landings"
+	}, "advertiserPublisherTextAds": {
+		"extends": "advertiser_publisher_text_ads"
+	}, "advertiserRank": {
+		"extends": "advertiser_rank"
+	}, "publisherRank": {
+		"extends": "publisher_rank"
+	}, "linksDomain": {
+		"extends": "links_domain"
+	}, "linksHostname": {
+		"extends": "links_hostname"
 	}
 }}
