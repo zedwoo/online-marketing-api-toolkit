@@ -24,16 +24,13 @@ class SemrushParseCsv implements ResponseClassInterface
 	{
 		$lines = explode("\n", $command->getResponse()->getBody(true));
 		$head = str_getcsv(array_shift($lines),';');
-		var_dump($head);
 		foreach($head as $key => $headItem){
 		$head[$key] = self::strtocamelcase($headItem);
 	}
 		$array = array();
 		foreach ($lines as $line) {
-			echo $line . "\n";
 			$array[] = array_combine($head, str_getcsv($line,';'));
 		}
-		//$result =  json_encode($array);
 		return $array;
 	}
 	public static function strtocamelcase($str){
