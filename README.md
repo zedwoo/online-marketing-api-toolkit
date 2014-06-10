@@ -47,7 +47,7 @@ OnlineMarketingApiToolkit in composer.json hinzufügen bzw. Datei erstellen:
 ```js
 {
     "require": {
-        "zedwoo/online-marketing-api-toolkit": "1.0.*"
+        "zedwoo/online-marketing-api-toolkit": "1.*"
     }
 }
 ```
