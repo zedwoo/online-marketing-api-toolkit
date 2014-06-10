@@ -59,7 +59,7 @@ class OmDataClient extends Client
             'api_key' => $config['api_key']
 										   ));
 
-        $client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/ServiceDescriptionOmData.json'));
+        $client->setDescription(ServiceDescription::factory(__DIR__ . '/Resources/ServiceDescriptionOmdata.json'));
         $client->setUserAgent('OnlineMarketingApiToolkit');
         return $client;
     }
