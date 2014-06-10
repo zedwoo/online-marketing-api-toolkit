@@ -1,0 +1,40 @@
+{"baseUrl": "http:\/\/www.seokicks.de\/SEOkicksService\/V1\/",
+	"description": "SEOkicks API",
+	"operations": {
+		"getInlinkData": {
+			"httpMethod": "GET",
+			"uri": "inlinkData",
+			"summary": "Get Backlinks for domain",
+			"parameters": {
+				"query": {
+					"location": "query",
+					"required": true,
+					"type": "string"
+				},
+				"details": {
+					"location": "query",
+					"required": false,
+					"type": "integer"
+				},
+				"results": {
+					"location": "query",
+					"required": false,
+					"type": "integer"
+				},
+				"page": {
+					"location": "query",
+					"required": false,
+					"type": "integer"
+				},
+				"output": {
+					"location": "query",
+					"required": false,
+					"default": "json",
+					"type": "string"
+				}
+
+			}
+		}
+
+	}
+}
