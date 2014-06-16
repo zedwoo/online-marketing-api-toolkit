@@ -1,6 +1,6 @@
 #OnlineMarketingApiToolkit: StrucrClient
 
-More info about the Seokicks-Api:
+More info about the Strucr-Api:
 https://strucr.com/
 
 Usage:
