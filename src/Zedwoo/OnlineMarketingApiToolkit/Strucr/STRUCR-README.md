@@ -11,7 +11,7 @@ use Zedwoo\OnlineMarketingApiToolkit\Strucr\StrucrClient;
 
 $client = StrucrClient::factory(array(
     'user' => 'your api user id',
-    'password' => 'your api password
+    'password' => 'your api password'
 ));
 
 // Get domains
