@@ -18,6 +18,7 @@ Aktuell sind folgende APIs in dieser Library implementiert:
 * [OmData](/src/Zedwoo/OnlineMarketingApiToolkit/OmData/OMDATA-README.md)
 * [Semrush](/src/Zedwoo/OnlineMarketingApiToolkit/Semrush/SEMRUSH-README.md)
 * [SEOkicks](/src/Zedwoo/OnlineMarketingApiToolkit/Seokicks/SEOKICKS-README.md)
+* [Strucr](/src/Zedwoo/OnlineMarketingApiToolkit/Strucr/Strucr-README.md)
 
 ##Installation
 Das Online-Marketing-Api-Toolkit ist über Packagist ([zedwoo/online-marketing-api-toolkit](https://packagist.org/packages/zedwoo/online-marketing-api-toolkit)) erhältlich und damit über
