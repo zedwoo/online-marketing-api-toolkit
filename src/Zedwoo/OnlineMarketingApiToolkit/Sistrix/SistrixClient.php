@@ -13,41 +13,41 @@ use Guzzle\Common\Exception\InvalidArgumentException;
  * Class SistrixClient
  * @package Zedwoo\OnlineMarketingApiToolkit\Sistrix
  *
- * @method  SistrixClient domain (array $args = array()) {@command Sistrix domain}
- * @method  SistrixClient domainOverview (array $args = array()) {@command Sistrix domainOverview}
- * @method  SistrixClient domainSichtbarkeitsindex (array $args = array()) {@command Sistrix domainSichtbarkeitsindex}
- * @method  SistrixClient domainPages (array $args = array()) {@command Sistrix domainPages}
- * @method  SistrixClient domainPagerank (array $args = array()) {@command Sistrix domainPagerank}
- * @method  SistrixClient domainAge (array $args = array()) {@command Sistrix domainAge}
- * @method  SistrixClient domainCompetitorsSeo (array $args = array()) {@command Sistrix domainCompetitorsSeo}
- * @method  SistrixClient domainCompetitorsSem (array $args = array()) {@command Sistrix domainCompetitorsSem}
- * @method  SistrixClient domainCompetitorsUs (array $args = array()) {@command Sistrix domainCompetitorsUs}
- * @method  SistrixClient domainKwcountSeo (array $args = array()) {@command Sistrix domainKwcountSeo}
- * @method  SistrixClient domainKwcountSeoTop10 (array $args = array()) {@command Sistrix domainKwcountSeoTop10}
- * @method  SistrixClient domainKwcountSem (array $args = array()) {@command Sistrix domainKwcountSem}
- * @method  SistrixClient domainKwcountUs (array $args = array()) {@command Sistrix domainKwcountUs}
- * @method  SistrixClient domainSocialOverview (array $args = array()) {@command Sistrix domainSocialOverview}
- * @method  SistrixClient domainSocialTop (array $args = array()) {@command Sistrix domainSocialTop}
- * @method  SistrixClient domainSocialLatest (array $args = array()) {@command Sistrix domainSocialLatest}
- * @method  SistrixClient domainSocialUrl (array $args = array()) {@command Sistrix domainSocialUrl}
- * @method  SistrixClient keyword (array $args = array()) {@command Sistrix keyword}
- * @method  SistrixClient keywordSeo (array $args = array()) {@command Sistrix keywordSeo}
- * @method  SistrixClient keywordSem (array $args = array()) {@command Sistrix keywordSem}
- * @method  SistrixClient keywordUs (array $args = array()) {@command Sistrix keywordUs}
- * @method  SistrixClient keywordDomainSeo (array $args = array()) {@command Sistrix keywordDomainSeo}
- * @method  SistrixClient keywordDomainSem (array $args = array()) {@command Sistrix keywordDomainSem}
- * @method  SistrixClient keywordDomainUs (array $args = array()) {@command Sistrix keywordDomainUs}
- * @method  SistrixClient linksOverview (array $args = array()) {@command Sistrix linksOverview}
- * @method  SistrixClient linksList (array $args = array()) {@command Sistrix linksList}
- * @method  SistrixClient linksLinktargets (array $args = array()) {@command Sistrix linksLinktargets}
- * @method  SistrixClient linksLinktexts (array $args = array()) {@command Sistrix linksLinktexts}
- * @method  SistrixClient monitoringProjects () {@command Sistrix monitoringProjects}
- * @method  SistrixClient monitoringFolders (array $args = array()) {@command Sistrix monitoringFolders}
- * @method  SistrixClient monitoringFolder (array $args = array()) {@command Sistrix monitoringFolder}
- * @method  SistrixClient monitoringCheck (array $args = array()) {@command Sistrix monitoringCheck}
- * @method  SistrixClient monitoringReports (array $args = array()) {@command Sistrix monitoringReports}
- * @method  SistrixClient monitoringReport (array $args = array()) {@command Sistrix monitoringReport}
- * @method  SistrixClient monitoringReportDownload (array $args = array()) {@command Sistrix monitoringReportDownload}
+ * @method  Model domain (array $args = array()) {@command Sistrix domain}
+ * @method  Model domainOverview (array $args = array()) {@command Sistrix domainOverview}
+ * @method  Model domainSichtbarkeitsindex (array $args = array()) {@command Sistrix domainSichtbarkeitsindex}
+ * @method  Model domainPages (array $args = array()) {@command Sistrix domainPages}
+ * @method  Model domainPagerank (array $args = array()) {@command Sistrix domainPagerank}
+ * @method  Model domainAge (array $args = array()) {@command Sistrix domainAge}
+ * @method  Model domainCompetitorsSeo (array $args = array()) {@command Sistrix domainCompetitorsSeo}
+ * @method  Model domainCompetitorsSem (array $args = array()) {@command Sistrix domainCompetitorsSem}
+ * @method  Model domainCompetitorsUs (array $args = array()) {@command Sistrix domainCompetitorsUs}
+ * @method  Model domainKwcountSeo (array $args = array()) {@command Sistrix domainKwcountSeo}
+ * @method  Model domainKwcountSeoTop10 (array $args = array()) {@command Sistrix domainKwcountSeoTop10}
+ * @method  Model domainKwcountSem (array $args = array()) {@command Sistrix domainKwcountSem}
+ * @method  Model domainKwcountUs (array $args = array()) {@command Sistrix domainKwcountUs}
+ * @method  Model domainSocialOverview (array $args = array()) {@command Sistrix domainSocialOverview}
+ * @method  Model domainSocialTop (array $args = array()) {@command Sistrix domainSocialTop}
+ * @method  Model domainSocialLatest (array $args = array()) {@command Sistrix domainSocialLatest}
+ * @method  Model domainSocialUrl (array $args = array()) {@command Sistrix domainSocialUrl}
+ * @method  Model keyword (array $args = array()) {@command Sistrix keyword}
+ * @method  Model keywordSeo (array $args = array()) {@command Sistrix keywordSeo}
+ * @method  Model keywordSem (array $args = array()) {@command Sistrix keywordSem}
+ * @method  Model keywordUs (array $args = array()) {@command Sistrix keywordUs}
+ * @method  Model keywordDomainSeo (array $args = array()) {@command Sistrix keywordDomainSeo}
+ * @method  Model keywordDomainSem (array $args = array()) {@command Sistrix keywordDomainSem}
+ * @method  Model keywordDomainUs (array $args = array()) {@command Sistrix keywordDomainUs}
+ * @method  Model linksOverview (array $args = array()) {@command Sistrix linksOverview}
+ * @method  Model linksList (array $args = array()) {@command Sistrix linksList}
+ * @method  Model linksLinktargets (array $args = array()) {@command Sistrix linksLinktargets}
+ * @method  Model linksLinktexts (array $args = array()) {@command Sistrix linksLinktexts}
+ * @method  Model monitoringProjects () {@command Sistrix monitoringProjects}
+ * @method  Model monitoringFolders (array $args = array()) {@command Sistrix monitoringFolders}
+ * @method  Model monitoringFolder (array $args = array()) {@command Sistrix monitoringFolder}
+ * @method  Model monitoringCheck (array $args = array()) {@command Sistrix monitoringCheck}
+ * @method  Model monitoringReports (array $args = array()) {@command Sistrix monitoringReports}
+ * @method  Model monitoringReport (array $args = array()) {@command Sistrix monitoringReport}
+ * @method  Model monitoringReportDownload (array $args = array()) {@command Sistrix monitoringReportDownload}
  */
 class SistrixClient extends Client
 {
