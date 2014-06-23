@@ -13,22 +13,22 @@ use Guzzle\Common\Exception\InvalidArgumentException;
  * Class OmDataClient
  * @package Zedwoo\OnlineMarketingApiToolkit\OmData
  *
- * @method  model accountStatus () {@command OmData accountStatus}
- * @method  model serpsWeeklyAddKeyword (array $args = array()) {@command OmData serpsWeeklyAddKeyword}
- * @method  model serpsWeeklyDeleteKeyword (array $args = array()) {@command OmData serpsWeeklyDeleteKeyword}
- * @method  model serpsWeeklyGetKeywords (array $args = array()) {@command OmData serpsWeeklyGetKeywords}
- * @method  model serpsWeeklyGetRankings (array $args = array()) {@command OmData serpsWeeklyGetRankings}
- * @method  model serpsDailyAddKeyword (array $args = array()) {@command OmData serpsDailyAddKeyword}
- * @method  model serpsDailyDeleteKeyword (array $args = array()) {@command OmData serpsDailyDeleteKeyword}
- * @method  model serpsDailyGetKeywords (array $args = array()) {@command OmData serpsDailyGetKeywords}
- * @method  model serpsDailyGetRankings (array $args = array()) {@command OmData serpsDailyGetRankings}
- * @method  model serpsDirectGetRankings (array $args = array()) {@command OmData serpsDirectGetRankings}
- * @method  model urlsPagerank (array $args = array()) {@command OmData urlsPagerank}
- * @method  model urlsServer (array $args = array()) {@command OmData urlsServer}
- * @method  model urlsUrlCheck (array $args = array()) {@command OmData urlsUrlCheck}
- * @method  model keywordsDifficulty (array $args = array()) {@command OmData keywordsDifficulty}
- * @method  model keywordsUserIntent (array $args = array()) {@command OmData keywordsUserIntent}
- * @method  model statusGet () {@command OmData statusGet}
+ * @method  Model accountStatus () {@command OmData accountStatus}
+ * @method  Model serpsWeeklyAddKeyword (array $args = array()) {@command OmData serpsWeeklyAddKeyword}
+ * @method  Model serpsWeeklyDeleteKeyword (array $args = array()) {@command OmData serpsWeeklyDeleteKeyword}
+ * @method  Model serpsWeeklyGetKeywords (array $args = array()) {@command OmData serpsWeeklyGetKeywords}
+ * @method  Model serpsWeeklyGetRankings (array $args = array()) {@command OmData serpsWeeklyGetRankings}
+ * @method  Model serpsDailyAddKeyword (array $args = array()) {@command OmData serpsDailyAddKeyword}
+ * @method  Model serpsDailyDeleteKeyword (array $args = array()) {@command OmData serpsDailyDeleteKeyword}
+ * @method  Model serpsDailyGetKeywords (array $args = array()) {@command OmData serpsDailyGetKeywords}
+ * @method  Model serpsDailyGetRankings (array $args = array()) {@command OmData serpsDailyGetRankings}
+ * @method  Model serpsDirectGetRankings (array $args = array()) {@command OmData serpsDirectGetRankings}
+ * @method  Model urlsPagerank (array $args = array()) {@command OmData urlsPagerank}
+ * @method  Model urlsServer (array $args = array()) {@command OmData urlsServer}
+ * @method  Model urlsUrlCheck (array $args = array()) {@command OmData urlsUrlCheck}
+ * @method  Model keywordsDifficulty (array $args = array()) {@command OmData keywordsDifficulty}
+ * @method  Model keywordsUserIntent (array $args = array()) {@command OmData keywordsUserIntent}
+ * @method  Model statusGet () {@command OmData statusGet}
  */
 class OmDataClient extends Client
 {
