@@ -13,14 +13,14 @@ use Guzzle\Service\Resource\Model;
  * Class MozClient
  * @package Zedwoo\OnlineMarketingApiToolkit\Moz
  *
- * @method  model urlMetrics (array $args = array()) {@command Moz urlMetrics}
- * @method  model urlMetricsBatch (array $args = array()) {@command Moz urlMetricsBatch}
- * @method  model linkMetrics (array $args = array()) {@command Moz linkMetrics}
- * @method  model anchorText (array $args = array()) {@command Moz anchorText}
- * @method  model topPages (array $args = array()) {@command Moz topPages}
- * @method  model metadataLastUpdate () {@command Moz metadataLastUpdate}
- * @method  model metadataNextUpdate () {@command Moz metadataNextUpdate}
- * @method  model metadataIndexStats () {@command Moz metadataIndexStats}
+ * @method  Model urlMetrics (array $args = array()) {@command Moz urlMetrics}
+ * @method  Model urlMetricsBatch (array $args = array()) {@command Moz urlMetricsBatch}
+ * @method  Model linkMetrics (array $args = array()) {@command Moz linkMetrics}
+ * @method  Model anchorText (array $args = array()) {@command Moz anchorText}
+ * @method  Model topPages (array $args = array()) {@command Moz topPages}
+ * @method  Model metadataLastUpdate () {@command Moz metadataLastUpdate}
+ * @method  Model metadataNextUpdate () {@command Moz metadataNextUpdate}
+ * @method  Model metadataIndexStats () {@command Moz metadataIndexStats}
  */
 class MozClient extends Client
 {
