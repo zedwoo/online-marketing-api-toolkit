@@ -14,7 +14,7 @@ use Zedwoo\OnlineMarketingApiToolkit\Seokicks\ForceContenttypePlugin;
  * Class SeokicksClient
  * @package Zedwoo\OnlineMarketingApiToolkit\Seokicks
  *
- * @method  SeokicksClient getInlinkData (array $args = array()) {@command SeokicksClient getInlinkData}
+ * @method  Model getInlinkData (array $args = array()) {@command SeokicksClient getInlinkData}
  *
  */
 class SeokicksClient extends Client
