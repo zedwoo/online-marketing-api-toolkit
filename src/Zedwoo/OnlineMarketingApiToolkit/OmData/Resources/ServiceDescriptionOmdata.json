@@ -1,4 +1,4 @@
-{"baseUrl": "http:\/\/api.zedwoo-data.de", "operations": {
+{"operations": {
 	"account\/status": {
 		"httpMethod": "GET",
 		"uri": "\/account\/status.json",
